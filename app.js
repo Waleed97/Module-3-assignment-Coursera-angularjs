@@ -28,8 +28,6 @@ function NarrowItDownController(MenuSearchService)
 	});
 
 };
-//console.log(this.found);
-
 menu.removeitem=function(index){
 menu.found.splice(index,1);
 };
