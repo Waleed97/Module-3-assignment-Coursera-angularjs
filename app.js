@@ -10,7 +10,7 @@ function FoundItems(){
 			items: '<',
 			onRemove: '&'
 		},
-		controller: controller: FoundItemsController,
+		controller: FoundItemsController,
     		controllerAs: 'ctrl',
     		bindToController: true
 	};
