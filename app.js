@@ -1,17 +1,16 @@
+var abc;
 angular.module('NarrowItDownApp',[])
 .controller('NarrowItDownController', NarrowItDownController)
 .service('MenuSearchService', MenuSearchService)
 .directive('foundItems',FoundItems);//should disply found list
 function FoundItems(){
+
 	var ddo={
-		templateUrl:'foundItems.html',
+		templateUrl:'http://localhost/test/foundItems.html',
 		scope:{
 			items: '<',
-			myTitle: '@title'
+			onRemove: '&'
 		},
-		// controller: FoundItemsDirectiveController,
-		// controllerAs: 'list',
-		// bindToController: true
 	};
 	return ddo;
 }
@@ -21,14 +20,20 @@ NarrowItDownController.$inject=['MenuSearchService'];
 function NarrowItDownController(MenuSearchService)
 {
  var menu = this;
- var found=[];
-menu.getMatchedMenuItems=function(searchTerm){
- menu.found=MenuSearchService.getMatchedMenuItems(menu.searchTerm);
-console.log(menu.found);
-}
+ menu.getMatchedMenuItems=function(searchTerm){
+	var promise=MenuSearchService.getMatchedMenuItems(menu.searchTerm);
+	promise.then( function(response){
+		console.log(response);
+		menu.found=response;
+		console.log(menu.found);
+	});
+
+};
+//console.log(this.found);
+
 menu.removeitem=function(index){
 menu.found.splice(index,1);
-}
+};
 }
 MenuSearchService.$inject = ['$http'];
 function MenuSearchService($http){
