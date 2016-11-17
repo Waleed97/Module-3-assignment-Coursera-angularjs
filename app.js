@@ -1,4 +1,3 @@
-var abc;
 angular.module('NarrowItDownApp',[])
 .controller('NarrowItDownController', NarrowItDownController)
 .service('MenuSearchService', MenuSearchService)
@@ -65,18 +64,3 @@ service.getMatchedMenuItems = function (searchTerm) {
 
 }
 
-function foundItems(foundItems){
-
-
-}
-
-//getMatchedMenuItems(searchTerm)
-//$https to get from server
-//return using promise found list[ then function itself returns a promise]
-// return $http(...).then(function (result) {
-//     // process result and only keep items that match
-//     var foundItems...
-
-//     // return processed items
-//     return foundItems;
-// });
