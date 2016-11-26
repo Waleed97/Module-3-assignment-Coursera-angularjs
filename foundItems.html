@@ -1,6 +1,5 @@
 <ol>
-  <li> 1. I am in there</li>
-  <li ng-repeat="item in ctrl.items">Name
+  <li ng-repeat="item in ctrl.items">
   {{item.short_name}}  {{item.name}}  {{item.description}}
   <button class="button" ng-click="ctrl.onRemove({index:$index})">Remove Item</button>
   </li>
