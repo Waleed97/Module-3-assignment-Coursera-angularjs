@@ -29,9 +29,16 @@ function NarrowItDownController(MenuSearchService)
   promise.then( function(response){
     console.log(response);
     menu.found=response;
-     
     console.log(menu.found);
   });
+   if (!menu.promise.length) {
+        menu.message = "Nothing found";
+      }
+   else{
+      menu.message='';
+   }
+
+  
 
 };
 menu.removeitem=function(index){
