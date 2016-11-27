@@ -13,7 +13,7 @@ function FoundItems(){
         controllerAs: 'ctrl',
         bindToController: true
   };
-  return ddo;
+ return ddo;
 }
 function FoundItemsController() {
    console.log(this.found);
