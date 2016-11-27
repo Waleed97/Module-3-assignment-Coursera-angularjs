@@ -1,5 +1,6 @@
 <ol>
  <h4>LIST OF ITEMS</h4>
+ <br><h4> {{ctrl.message}}</h4>
    <li ng-repeat="item in ctrl.items">
   {{item.short_name}},{{item.name}}        ,  {{item.description}}
   <button class="button" ng-click="ctrl.onRemove({index:$index})">Remove Item</button>
