@@ -29,7 +29,7 @@ function NarrowItDownController(MenuSearchService)
     console.log(response);
     menu.found=response;
     console.log(menu.found);
-      if (menu.found==[]) {
+      if (menu.found.length===0) {
           
        console.log("Nothing found");
         menu.message = "Nothing found";
