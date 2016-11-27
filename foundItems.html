@@ -6,8 +6,8 @@
   <li ng-repeat="item in ctrl.items">
       <table><tr><th>Short Name</th> <th>Name</th>                  <th>Description</th></tr><tr>
     <td>{{item.short_name}}</td>  <td>{{item.name}}         </td>  <td>{{item.description}}</td>
-  <button class="button" ng-click="ctrl.onRemove({index:$index})">Remove Item</button>
-          </tr></li>      
+          <button class="button" ng-click="ctrl.onRemove({index:$index})">Remove Item</button>
+          </tr>
     </table>
 </ol>
     
