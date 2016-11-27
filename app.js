@@ -29,8 +29,7 @@ function NarrowItDownController(MenuSearchService)
     console.log(response);
     menu.found=response;
     console.log(menu.found);
-  });
-   if (menu.found==[]) {
+      if (menu.found==[]) {
        console.log("Nothing found");
         menu.message = "Nothing found";
       }
@@ -39,6 +38,8 @@ function NarrowItDownController(MenuSearchService)
        console.log("In else");
    }
 
+  });
+   
   
 
 };
