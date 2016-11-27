@@ -8,7 +8,7 @@ function FoundItems(){
     scope:{
       items: '<',
       onRemove: '&'
-    }
+     }
      controller: FoundItemsController,
         controllerAs: 'ctrl',
         bindToController: true
