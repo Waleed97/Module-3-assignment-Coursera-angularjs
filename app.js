@@ -10,6 +10,9 @@ function FoundItems(){
       items: '<',
       onRemove: '&'
     }
+     controller: FoundItemsController,
+        controllerAs: 'ctrl',
+        bindToController: true
   };
   return ddo;
 }
