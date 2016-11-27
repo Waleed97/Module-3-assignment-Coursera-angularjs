@@ -31,6 +31,7 @@ menu.removeitem=function(index){
 menu.found.splice(index,1);
 };
 }
+
 MenuSearchService.$inject = ['$http'];
 function MenuSearchService($http){
 var service = this;
