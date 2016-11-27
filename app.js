@@ -9,19 +9,9 @@ function FoundItems(){
     scope:{
       items: '<',
       onRemove: '&'
-    },
-    controller: FoundItemsController,
-        controllerAs: 'ctrl',
-        bindToController: true
+    }
   };
   return ddo;
-}
-
-function FoundItemsController() {
-  var menu = this;
-
-  menu.found = [];
-  menu.message = "Nothing found";
 }
 
 NarrowItDownController.$inject=['MenuSearchService'];
