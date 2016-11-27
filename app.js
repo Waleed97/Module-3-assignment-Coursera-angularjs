@@ -9,7 +9,7 @@ function FoundItems(){
 		scope:{
 			items: '<',
 			onRemove: '&'
-		},
+		}
 	};
 	return ddo;
 }
