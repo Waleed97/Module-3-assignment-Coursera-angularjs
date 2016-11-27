@@ -1,7 +1,13 @@
+<br>
+<h4>LIST OF ITEMS</h4>
+<br>
 <ol>
-  <li ng-repeat="item in ctrl.items">
-  {{item.short_name}}  {{item.name}}  {{item.description}}
+    <table><tr><th>Short Name</th><th>Name</th><th>Description</th></tr>
+  <tr><li ng-repeat="item in ctrl.items">
+    <td>{{item.short_name}}</td>  <td>{{item.name}}         </td>  <td>{{item.description}}</td>
   <button class="button" ng-click="ctrl.onRemove({index:$index})">Remove Item</button>
-  </li>
+      </tr>
+    </table>
+    </li>
 </ol>
     
