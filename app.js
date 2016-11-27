@@ -15,7 +15,9 @@ function FoundItems(){
   };
   return ddo;
 }
+function FoundItemsController() {
 
+}
 NarrowItDownController.$inject=['MenuSearchService'];
 function NarrowItDownController(MenuSearchService)
 {
