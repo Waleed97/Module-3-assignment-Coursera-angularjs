@@ -19,7 +19,7 @@ function FoundItems(){
 
 function FoundItemsController() {
   var menu = this;
-
+console.log(menu.found);
   menu.found = [];
   menu.message = "Nothing found";
 }
