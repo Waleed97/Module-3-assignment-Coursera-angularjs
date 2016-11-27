@@ -4,7 +4,7 @@ angular.module('NarrowItDownApp',[])
 .directive('foundItems',FoundItems);//should disply found list
 function FoundItems(){
    
-   var ddo={
+  var ddo={
     templateUrl:'foundItems.html',
     scope:{
       items: '<',
