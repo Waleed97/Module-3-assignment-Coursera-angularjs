@@ -30,13 +30,10 @@ function NarrowItDownController(MenuSearchService)
     menu.found=response;
     console.log(menu.found);
       if (menu.found.length===0) {
-          
-       console.log("Nothing found");
         menu.message = "Nothing found";
       }
    else{
       menu.message='';
-       console.log("In else");
    }
 
   });
